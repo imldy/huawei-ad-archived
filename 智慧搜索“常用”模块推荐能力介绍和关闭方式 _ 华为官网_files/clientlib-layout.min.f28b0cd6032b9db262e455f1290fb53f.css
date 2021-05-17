@@ -1,0 +1,15 @@
+@media(min-width:1024px){.phoenix-layout .phoenix-layout-container{max-width:1190px;margin:0 auto}
+.phoenix-layout.one-column>.content>div{width:100%}
+.phoenix-layout.two-column>.content>div{width:50%}
+.phoenix-layout.three-column>.content>div{width:33.33333333%}
+.phoenix-layout.four-column>.content>div{width:25%}
+.phoenix-layout>.content{overflow:hidden}
+.phoenix-layout>.content>div{float:left}
+.phoenix-layout .newpar{width:100% !important}
+}
+.phoenix-pt{padding:50px 0 50px !important}
+.pix-skeleton-root{display:none}
+div[card-type='uiCard'][card-wcm-mode='DISABLED']+.pix-skeleton-root{display:block;position:relative}
+@keyframes pix-fade-in{0.00001%,100%{opacity:0}
+50%{opacity:1}
+}

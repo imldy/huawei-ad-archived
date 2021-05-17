@@ -1,0 +1,877 @@
+(function(window){
+  
+    window.Search_Tag_cn =
+    {
+    "seletData": [
+        {
+            "name":"全部",
+            "key":"0"
+        },
+        {
+            "name":"开发类",
+            "key":"1",
+            "tag":"10100000",
+            "childer":[{
+                "name":"全部",
+                "key":"0"
+            },{
+                "name":"华为移动服务",
+                "key":"1",
+                "tag":"10102000"
+            },{
+                "name":"媒体",
+                "key":"2",
+                "tag":"10102001"
+            },{
+                "name":"HUAWEI HiAI",
+                "key":"3",
+                "tag":"10102002"
+            },{
+                "name":"HUAWEI AR",
+                "key":"4",
+                "tag":"10102003"
+            },{
+                "name":"HUAWEI VR ",
+                "key":"5",
+                "tag":"10102004"
+            },{
+                "name":"智能家居",
+                "key":"6",
+                "tag":"10102005"
+            },{
+                "name":"运动健康",
+                "key":"7",
+                "tag":"10102006"
+            },{
+                "name":"系统",
+                "key":"8",
+                "tag":"10102007"
+            },{
+                "name":"开发工具",
+                "key":"9",
+                "tag":"10102008"
+            },{
+                "name":"配件",
+                "key":"10",
+                "tag":"10102009"
+            }]
+        },{
+            "name":"分发类",
+            "key":"2",
+            "tag":"10200000"
+        },{
+            "name":"基础服务类",
+            "key":"3",
+            "tag":"10300000"
+        },{
+            "name":"FAQ帮助",
+            "key":"4",
+            "tag":"10400000",
+            "childer":[
+                {
+                    "name":"全部",
+                    "key":"0"
+                },{
+                    "name":"快速入门",
+                    "key":"1",
+                    "tag":"10401000"
+                }
+            ]
+        }
+    ],
+    "tabList":[
+        {
+            "name":"全部",
+            "key":"0"
+        },
+        {
+            "name":"文档指南",
+            "key":"1",
+            "tag":"10102000"
+        },
+        {
+            "name":"业务介绍",
+            "key":"2",
+            "tag":"10102001"
+        },
+        {
+            "name":"服务协议",
+            "key":"3",
+            "tag":"10102002"
+        },
+        {
+            "name":"规范标准",
+            "key":"4",
+            "tag":"10102003"
+        },
+        {
+            "name":"API参考",
+            "key":"5",
+            "tag":"10102004"
+        },
+        {
+            "name":"SDK库",
+            "key":"6",
+            "tag":"10102005"
+        },
+        {
+            "name":"工具库",
+            "key":"7",
+            "tag":"10102006"
+        },
+        {
+            "name":"示例代码",
+            "key":"8",
+            "tag":"10102007"
+        },
+        {
+            "name":"FAQ",
+            "key":"9",
+            "tag":"10102008"
+        },
+        {
+            "name":"术语",
+            "key":"10",
+            "tag":"10102009"
+        },
+        {
+            "name":"开发指南",
+            "key":"11",
+            "tag":"10102010"
+        },
+        {
+            "name":"其他",
+            "key":"12",
+            "tag":"10102011"
+        },
+        {
+            "name":"内容分发",
+            "key":"13",
+            "tag":"10202002"
+        },
+        {
+            "name":"推广与付费广告",
+            "key":"14",
+            "tag":"10202003"
+        },
+        {
+            "name":"文档指南",
+            "key":"15",
+            "tag":"10203000"
+        },
+        {
+            "name":"业务介绍",
+            "key":"16",
+            "tag":"10203001"
+        },
+        {
+            "name":"操作指南",
+            "key":"17",
+            "tag":"10203002"
+        },
+        {
+            "name":"服务协议",
+            "key":"18",
+            "tag":"10203003"
+        },
+        {
+            "name":"工具库",
+            "key":"19",
+            "tag":"10203004"
+        },
+        {
+            "name":"规范标准",
+            "key":"20",
+            "tag":"10203005"
+        },
+        {
+            "name":"FAQ",
+            "key":"21",
+            "tag":"10203006"
+        },
+        {
+            "name":"术语",
+            "key":"22",
+            "tag":"10203007"
+        },
+        {
+            "name":"其他",
+            "key":"23",
+            "tag":"10203008"
+        },
+        {
+            "name":" 快速入门",
+            "key":"24",
+            "tag":"10303000"
+        },
+        {
+            "name":"应用分发",
+            "key":"25",
+            "tag":"10202000"
+        },
+        {
+            "name":"服务分发",
+            "key":"26",
+            "tag":"10202001"
+        },
+        {
+            "name":"快速入门",
+            "key":"27",
+            "tag":"10401000"
+        }
+    ],
+
+},
+window.Search_Tag_en ={
+    "seletData": [
+        {
+            "name":"All",
+            "key":"0"
+        },
+        {
+            "name":"Development",
+            "key":"1",
+            "tag":"10100000",
+            "childer":[{
+                "name":"All",
+                "key":"0"
+            },{
+                "name":"HMS",
+                "key":"1",
+                "tag":"10102000"
+            },{
+                "name":"Media",
+                "key":"2",
+                "tag":"10102001"
+            },{
+                "name":"HUAWEI HiAI",
+                "key":"3",
+                "tag":"10102002"
+            },{
+                "name":"HUAWEI AR",
+                "key":"4",
+                "tag":"10102003"
+            },{
+                "name":"HUAWEI VR ",
+                "key":"5",
+                "tag":"10102004"
+            },{
+                "name":"Smart Home",
+                "key":"6",
+                "tag":"10102005"
+            },{
+                "name":"Fitness and Health",
+                "key":"7",
+                "tag":"10102006"
+            },{
+                "name":"System",
+                "key":"8",
+                "tag":"10102007"
+            },{
+                "name":"Development Tools",
+                "key":"9",
+                "tag":"10102008"
+            },{
+                "name":"Accessories",
+                "key":"10",
+                "tag":"10102009"
+            }]
+        },{
+            "name":"Distribution",
+            "key":"2",
+            "tag":"10200000"
+        },{
+            "name":"Basic Services",
+            "key":"3",
+            "tag":"10300000"
+        },{
+            "name":"FAQ帮助",
+            "key":"4",
+            "tag":"10400000",
+            "childer":[
+                {
+                    "name":"全部",
+                    "key":"0"
+                },{
+                    "name":"快速入门",
+                    "key":"1",
+                    "tag":"10401000"
+                }
+            ]
+        }
+    ],
+    "tabList":[
+        {
+            "name":"all",
+            "key":"0"
+        },
+        {
+            "name":"Documentation Guide",
+            "key":"1",
+            "tag":"10102000"
+        },
+        {
+            "name":"Service Introduction",
+            "key":"2",
+            "tag":"10102001"
+        },
+        {
+            "name":"Service Protocol",
+            "key":"3",
+            "tag":"10102002"
+        },
+        {
+            "name":"Standards",
+            "key":"4",
+            "tag":"10102003"
+        },
+        {
+            "name":"API References",
+            "key":"5",
+            "tag":"10102004"
+        },
+        {
+            "name":"SDK Library",
+            "key":"6",
+            "tag":"10102005"
+        },
+        {
+            "name":"Tool Library",
+            "key":"7",
+            "tag":"10102006"
+        },
+        {
+            "name":"Sample Code",
+            "key":"8",
+            "tag":"10102007"
+        },
+        {
+            "name":"FAQ",
+            "key":"9",
+            "tag":"10102008"
+        },
+        {
+            "name":"Terminology",
+            "key":"10",
+            "tag":"10102009"
+        },
+        {
+            "name":"Development Guide",
+            "key":"11",
+            "tag":"10102010"
+        },
+        {
+            "name":"Other",
+            "key":"12",
+            "tag":"10102011"
+        },
+        {
+            "name":"Distribute Content",
+            "key":"13",
+            "tag":"10202002"
+        },
+        {
+            "name":"Promotion and Paid Advertising",
+            "key":"14",
+            "tag":"10202003"
+        },
+        {
+            "name":"Documentation Guides",
+            "key":"15",
+            "tag":"10203000"
+        },
+        {
+            "name":"Service Descriptions",
+            "key":"16",
+            "tag":"10203001"
+        },
+        {
+            "name":"User Guides",
+            "key":"17",
+            "tag":"10203002"
+        },
+        {
+            "name":"Service Agreements",
+            "key":"18",
+            "tag":"10203003"
+        },
+        {
+            "name":"Tool Library",
+            "key":"19",
+            "tag":"10203004"
+        },
+        {
+            "name":"Guidelines",
+            "key":"20",
+            "tag":"10203005"
+        },
+        {
+            "name":"FAQ",
+            "key":"21",
+            "tag":"10203006"
+        },
+        {
+            "name":"Terminology",
+            "key":"22",
+            "tag":"10203007"
+        },
+        {
+            "name":"Other",
+            "key":"23",
+            "tag":"10203008"
+        },
+        {
+            "name":"Getting Started",
+            "key":"24",
+            "tag":"10303000"
+        },
+        {
+            "name":"Distribute Apps",
+            "key":"25",
+            "tag":"10202000"
+        },
+        {
+            "name":"Distribute Services",
+            "key":"26",
+            "tag":"10202001"
+        },
+        {
+            "name":"Getting Started",
+            "key":"27",
+            "tag":"10401000"
+        }
+    ]
+},
+window.Search_Tag_ru =
+{
+    "seletData": [
+        {
+            "name":"Все",
+            "key":"0"
+        },
+        {
+            "name":"Разработка",
+            "key":"1",
+            "tag":"10100000",
+            "childer":[{
+                "name":"Все",
+                "key":"0"
+            },{
+                "name":"Мобильные службы Huawei",
+                "key":"1"
+            },{
+                "name":"медиа",
+                "key":"2"
+            },{
+                "name":"HUAWEI HiAI",
+                "key":"3"
+            },{
+                "name":"HUAWEI AR",
+                "key":"4"
+            },{
+                "name":"HUAWEI VR ",
+                "key":"5"
+            },{
+                "name":"интеллигентный дом",
+                "key":"6"
+            },{
+                "name":"спортивное здоровье",
+                "key":"7"
+            },{
+                "name":"система",
+                "key":"8"
+            },{
+                "name":"разработка инструментов",
+                "key":"9"
+            },{
+                "name":"арматура",
+                "key":"10"
+            }]
+        },{
+            "name":"Распространение",
+            "key":"2",
+            "tag":"10200000"
+        },{
+            "name":"Основные службы",
+            "key":"3",
+            "tag":"10300000"
+        },
+        {
+            "name":"FAQ帮助",
+            "key":"4",
+            "tag":"10400000",
+            "childer":[
+                {
+                    "name":"全部",
+                    "key":"0"
+                },{
+                    "name":"快速入门",
+                    "key":"1",
+                    "tag":"10401000"
+                }
+            ]
+        }
+    ],
+    "tabList":[
+        {
+            "name":"Все",
+            "key":"0"
+        },
+        {
+            "name":"Справочники по документации",
+            "key":"1",
+            "tag":"10102000"
+        },
+        {
+            "name":"Описания служб",
+            "key":"2",
+            "tag":"10102001"
+        },
+        {
+            "name":"Сервисные соглашения",
+            "key":"3",
+            "tag":"10102002"
+        },
+        {
+            "name":"Руководства",
+            "key":"4",
+            "tag":"10102003"
+        },
+        {
+            "name":"Справочные материалы по API",
+            "key":"5",
+            "tag":"10102004"
+        },
+        {
+            "name":"Библиотека SDK",
+            "key":"6",
+            "tag":"10102005"
+        },
+        {
+            "name":"Библиотека инструментов",
+            "key":"7",
+            "tag":"10102006"
+        },
+        {
+            "name":"Библиотека инструментов",
+            "key":"8",
+            "tag":"10102007"
+        },
+        {
+            "name":"Библиотека инструментов",
+            "key":"9",
+            "tag":"10102008"
+        },
+        {
+            "name":"Терминология",
+            "key":"10",
+            "tag":"10102009"
+        },
+        {
+            "name":"Инструкции для разработчиков",
+            "key":"11",
+            "tag":"10102010"
+        },
+        {
+            "name":"Другое",
+            "key":"12",
+            "tag":"10102011"
+        },
+        {
+            "name":"Раздача содержимого",
+            "key":"13",
+            "tag":"10202002"
+        },
+        {
+            "name":"Рекламная реклама",
+            "key":"14",
+            "tag":"10202003"
+        },
+        {
+            "name":"Справочники по документации",
+            "key":"15",
+            "tag":"10203000"
+        },
+        {
+            "name":"Описания служб",
+            "key":"16",
+            "tag":"10203001"
+        },
+        {
+            "name":"Руководства пользователя",
+            "key":"17",
+            "tag":"10203002"
+        },
+        {
+            "name":"Сервисные соглашения",
+            "key":"18",
+            "tag":"10203003"
+        },
+        {
+            "name":"Библиотека инструментов",
+            "key":"19",
+            "tag":"10203004"
+        },
+        {
+            "name":"Руководства",
+            "key":"20",
+            "tag":"10203005"
+        },
+        {
+            "name":"Вопросы и ответы",
+            "key":"21",
+            "tag":"10203006"
+        },
+        {
+            "name":"Терминология",
+            "key":"22",
+            "tag":"10203007"
+        },
+        {
+            "name":"Другое",
+            "key":"23",
+            "tag":"10203008"
+        },
+        {
+            "name":"Начало работы",
+            "key":"24",
+            "tag":"10303000"
+        },
+        {
+            "name":"Распространение приложений",
+            "key":"25",
+            "tag":"10202000"
+        },
+        {
+            "name":"Распределительные услуги",
+            "key":"26",
+            "tag":"10202001"
+        },
+        {
+            "name":"Начало работы",
+            "key":"27",
+            "tag":"10401000"
+        }
+    ]
+}
+window.Search_Tag_es ={
+    "seletData": [
+        {
+            "name":"All",
+            "key":"0"
+        },
+        {
+            "name":"Development",
+            "key":"1",
+            "tag":"10100000",
+            "childer":[{
+                "name":"All",
+                "key":"0"
+            },{
+                "name":"HMS",
+                "key":"1",
+                "tag":"10102000"
+            },{
+                "name":"Media",
+                "key":"2",
+                "tag":"10102001"
+            },{
+                "name":"HUAWEI HiAI",
+                "key":"3",
+                "tag":"10102002"
+            },{
+                "name":"HUAWEI AR",
+                "key":"4",
+                "tag":"10102003"
+            },{
+                "name":"HUAWEI VR ",
+                "key":"5",
+                "tag":"10102004"
+            },{
+                "name":"Smart Home",
+                "key":"6",
+                "tag":"10102005"
+            },{
+                "name":"Fitness and Health",
+                "key":"7",
+                "tag":"10102006"
+            },{
+                "name":"System",
+                "key":"8",
+                "tag":"10102007"
+            },{
+                "name":"Development Tools",
+                "key":"9",
+                "tag":"10102008"
+            },{
+                "name":"Accessories",
+                "key":"10",
+                "tag":"10102009"
+            }]
+        },{
+            "name":"Distribution",
+            "key":"2",
+            "tag":"10200000"
+        },{
+            "name":"Basic Services",
+            "key":"3",
+            "tag":"10300000"
+        },{
+            "name":"FAQ帮助",
+            "key":"4",
+            "tag":"10400000",
+            "childer":[
+                {
+                    "name":"全部",
+                    "key":"0"
+                },{
+                    "name":"快速入门",
+                    "key":"1",
+                    "tag":"10401000"
+                }
+            ]
+        }
+    ],
+    "tabList":[
+        {
+            "name":"all",
+            "key":"0"
+        },
+        {
+            "name":"Documentation Guide",
+            "key":"1",
+            "tag":"10102000"
+        },
+        {
+            "name":"Service Introduction",
+            "key":"2",
+            "tag":"10102001"
+        },
+        {
+            "name":"Service Protocol",
+            "key":"3",
+            "tag":"10102002"
+        },
+        {
+            "name":"Standards",
+            "key":"4",
+            "tag":"10102003"
+        },
+        {
+            "name":"API References",
+            "key":"5",
+            "tag":"10102004"
+        },
+        {
+            "name":"SDK Library",
+            "key":"6",
+            "tag":"10102005"
+        },
+        {
+            "name":"Tool Library",
+            "key":"7",
+            "tag":"10102006"
+        },
+        {
+            "name":"Sample Code",
+            "key":"8",
+            "tag":"10102007"
+        },
+        {
+            "name":"FAQ",
+            "key":"9",
+            "tag":"10102008"
+        },
+        {
+            "name":"Terminology",
+            "key":"10",
+            "tag":"10102009"
+        },
+        {
+            "name":"Development Guide",
+            "key":"11",
+            "tag":"10102010"
+        },
+        {
+            "name":"Other",
+            "key":"12",
+            "tag":"10102011"
+        },
+        {
+            "name":"Distribute Content",
+            "key":"13",
+            "tag":"10202002"
+        },
+        {
+            "name":"Promotion and Paid Advertising",
+            "key":"14",
+            "tag":"10202003"
+        },
+        {
+            "name":"Documentation Guides",
+            "key":"15",
+            "tag":"10203000"
+        },
+        {
+            "name":"Service Descriptions",
+            "key":"16",
+            "tag":"10203001"
+        },
+        {
+            "name":"User Guides",
+            "key":"17",
+            "tag":"10203002"
+        },
+        {
+            "name":"Service Agreements",
+            "key":"18",
+            "tag":"10203003"
+        },
+        {
+            "name":"Tool Library",
+            "key":"19",
+            "tag":"10203004"
+        },
+        {
+            "name":"Guidelines",
+            "key":"20",
+            "tag":"10203005"
+        },
+        {
+            "name":"FAQ",
+            "key":"21",
+            "tag":"10203006"
+        },
+        {
+            "name":"Terminology",
+            "key":"22",
+            "tag":"10203007"
+        },
+        {
+            "name":"Other",
+            "key":"23",
+            "tag":"10203008"
+        },
+        {
+            "name":"Getting Started",
+            "key":"24",
+            "tag":"10303000"
+        },
+        {
+            "name":"Distribute Apps",
+            "key":"25",
+            "tag":"10202000"
+        },
+        {
+            "name":"Distribute Services",
+            "key":"26",
+            "tag":"10202001"
+        },
+        {
+            "name":"Getting Started",
+            "key":"27",
+            "tag":"10401000"
+        }
+    ]
+}
+})(window);

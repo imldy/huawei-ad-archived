@@ -1,0 +1,73 @@
+function dmpa_reported(etype, edata) {
+    //用户未开启dmpa上报权限
+    if(typeof dmpa5_isset != 'undefined' && dmpa5_isset === -1) {
+        return false;
+    }
+
+    var action_event = [
+        'comment', //回复楼层  DmpaService.ACTION.RATE
+        'praise', //点赞  DmpaService.ACTION.PRAISE
+        'collect', //收藏 DmpaService.ACTION.COLLECT
+        'share', //分享 DmpaService.ACTION.SHARE
+        'signin', //登录账号 DmpaService.ACTION.SIGIN
+        'click'  //其他各种点击 DmpaService.ACTION.CLICK
+    ];
+
+    if(!edata) {
+        edata = {};
+    }
+    edata = getedata(etype, edata);
+
+    var dmpai = 0;
+    var dmpainterval = setInterval(function() {
+        dmpai++;
+        if(typeof dmpa5_isset != 'undefined' && dmpa5_isset > 0) {  //已经进行过set
+            if(action_event.indexOf(etype) > -1) {
+                dmpa5('trackEvent', etype, edata);
+            } else if (etype == 'threadview') {  //浏览帖子详情
+                dmpa5('trackPageView', edata);
+            } else if (etype == 'search') {  //搜索 DmpaService.ACTION.SEARCH1
+                dmpa5('trackSiteSearch', 'search1', edata);
+            }
+            clearInterval(dmpainterval);
+        } else if (dmpai >= 5) {
+            console.log('dmpa5() is not defined');
+            clearInterval(dmpainterval);
+        }
+    }, 2500);
+}
+
+function getedata(etype, edata) {
+    var data = {};
+    edata['location'] = window.location.href;
+    
+    if(etype == 'threadview') {
+        var performance = window.performance;
+        var loadTime = 0;
+        if(performance) {
+            loadTime = performance.timing.loadEventEnd > 0 ? performance.timing.loadEventEnd : performance.timing.domContentLoadedEventEnd;
+            loadTime = loadTime-performance.timing.navigationStart;
+        }
+        data = {
+            'title': edata.title,
+            'location' : window.location.href,
+            'uri' : edata.tid,
+            'referrerUrl' : document.referrer,
+            'pageLoadDelay' : loadTime,
+            'trackSource' : document.referrer,
+            'trackMedium' : '',
+            'trackCampaign' : '',
+        };
+    } else if (etype == 'search') {
+        edata['count'] = 0;
+        edata['firstItem'] = '';
+        
+        data = edata;
+    } else {
+        edata['uri'] = window.location.pathname;
+        edata['category'] = edata.category ? edata.category : window.location.pathname;
+        data = edata;
+    }
+
+    return data;
+}

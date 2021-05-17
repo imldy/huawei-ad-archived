@@ -1,0 +1,71 @@
+var win = parent ? parent.window : window;
+(function(window, document) {
+    (function(win, doc, script) {
+        var js;
+        var length=0;
+        var fjs = document.getElementById("dmpa_script");
+		var baseUrl = "";		
+		if("undefined"==typeof win.DMPA_SCRIPT_BASEURL){
+			baseUrl ="nkgnginxcl-ts.huawei.com";
+		}else{
+			baseUrl = win.DMPA_SCRIPT_BASEURL;
+		}					
+        var dmpaJs = "/api/5.0/dmpa.js";
+		//如果ngins有问题的情况就使用项目原来的资源
+		//dmpaJs = "/dmpa/resource/js/uat/3.0/dmpa.js",
+		ck="_dmpa_id";
+		if(doc.getElementsByTagName('script').length>1)
+		{
+			length=doc.getElementsByTagName('script').length-1;
+		};
+		fjs=(fjs?fjs:doc.getElementsByTagName('script')[length]);
+		var pro=window.location.protocol;
+		loaderJs = function(url, id, callback) {
+			if (!doc.getElementById(id)) {
+				js = doc.createElement(script);
+				callback = callback || function() {};
+				js.onload = js.onreadystatechange = function() {
+					if (!this.readyState || 'loaded' === this.readyState || 'complete' === this.readyState) {
+						callback();
+						this.onload = this.onreadystatechange = null;
+					}
+				}
+				js.src = pro+"//"+url;
+				js.async = true;
+				id && (js.id = id);
+				fjs.parentNode.insertBefore(js, fjs);
+			}
+		};
+        
+		
+        if (document.cookie.indexOf(ck) < 0 || getUid(ck) === "undefined") {
+            setTimeout(function() {
+                loaderJs(baseUrl + "/dmpa/open/dc/dataStdId?dmpaid=1", "dmpa5Id", function() {
+                    setTimeout(function() {
+                        loaderJs(baseUrl + dmpaJs, "dmpa5");
+                    }, 0);
+                });
+            }, 0);
+        } else {
+            setTimeout(function() {
+                loaderJs(baseUrl + dmpaJs, "dmpa5");
+            }, 0);
+        }
+
+        function getUid(ky) {
+            var arr = document.cookie.split(";");
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i].indexOf(ky) >= 0) {
+                    var itemArr = arr[i].split("=");
+                    for (var j = 0; j < itemArr.length; j++) {
+                        var value = itemArr[1];
+                        var value_id = value.split("\.")[0];
+                       
+                        return value_id;
+                    }
+                }
+
+            }
+        }
+    })(window, document, 'script');
+}(win, win.document));

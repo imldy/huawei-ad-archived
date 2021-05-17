@@ -1,0 +1,333 @@
+@charset "UTF-8";
+/*联系我门 start*/
+.v3-contactus {
+  width: 80%;
+  margin-top: 12.2666vw;
+}
+
+.v3-contactus .v3-contactus-icon {
+  margin-top: 4vw;
+}
+
+.v3-contactus .v3-contactus-content {
+  font-size: 3.4666vw;
+  color: #000000;
+  line-height: 6.1333vw;
+  padding-left: 1.7333vw;
+}
+
+.v3-contactus a.v3-contactus-tel-blue {
+  color: #0091ff;
+}
+
+.v3-contactus ul {
+  list-style: none;
+  margin-top: 7.2vw;
+}
+
+.v3-contactus ul li {
+  font-size: 3.4666vw;
+  color: #000000;
+  line-height: 6.1333vw;
+}
+
+.v3-contactus > ul li {
+  padding-left: 12%;
+  margin-bottom: 6.1333vw;
+  position: relative;
+}
+
+/*.v3-contactus ul li.v3-contactus-tel {
+  background: url(../img/contactus01.png) no-repeat left top;
+  background-size: 8%;
+}
+
+.v3-contactus ul li.v3-contactus-pdtel {
+  background: url(../img/contactus02.png) no-repeat left top;
+  background-size: 8%;
+}*/
+
+.v3-contactus ul.v3-second-list {
+  margin-left: -12%;
+}
+
+.v3-contactus ul.v3-second-list li {
+  position: relative;
+  width: 49%;
+  display: inline-block;
+}
+
+/*.v3-contactus ul li.v3-contactus-online {
+  background: url(../img/contactus03.png) no-repeat left top;
+  background-size: 16%;
+}
+
+.v3-contactus ul li.v3-contactus-service_center {
+  background: url(../img/contactus04.png) no-repeat left top;
+  background-size: 16%;
+}
+
+.v3-contactus ul li.v3-contactus-store {
+  background: url(../img/contactus05.png) no-repeat left top;
+  background-size: 16%;
+}
+
+.v3-contactus ul li.v3-contactus-WeChart {
+  background: url(../img/contactus06.png) no-repeat left top;
+  background-size: 16%;
+}*/
+
+.v3-contactus .hwimg_hover .v3-contactus-qrcode {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: -115px;
+  border: solid 1px #999;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  background: #fff;
+}
+
+.v3-contactus .hwimg_hover:hover .v3-contactus-qrcode {
+  display: block;
+  width: 108px;
+  height: 108px;
+  padding: 5px;
+  z-index: 10;
+}
+.v3-contactus .tel,.v3-contactus .pdtel,.v3-contactus .online,.v3-contactus .service_center,.v3-contactus .store,.v3-contactus .WeChart{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}
+.v3-contactus .tel{
+  background: url(/etc/designs/huawei-cbg-site/clientlib-support-v2/support-public/img/v3/v3-icons.svg) -1572px -116px no-repeat;
+}
+.v3-contactus .pdtel{
+  background: url(/etc/designs/huawei-cbg-site/clientlib-support-v2/support-public/img/v3/v3-icons.svg) -1612px -116px no-repeat;
+}
+.v3-contactus .online{
+  background: url(/etc/designs/huawei-cbg-site/clientlib-support-v2/support-public/img/v3/v3-icons.svg) -1652px -116px no-repeat;
+}
+.v3-contactus .service_center{
+  background: url(/etc/designs/huawei-cbg-site/clientlib-support-v2/support-public/img/v3/v3-icons.svg) -1692px -116px no-repeat;
+}
+.v3-contactus .store{
+  background: url(/etc/designs/huawei-cbg-site/clientlib-support-v2/support-public/img/v3/v3-icons.svg) -1732px -116px no-repeat;
+}
+.v3-contactus .WeChart{
+  background: url(/etc/designs/huawei-cbg-site/clientlib-support-v2/support-public/img/v3/v3-icons.svg) -1772px -116px no-repeat;
+}
+
+
+@media (min-width: 768px) {
+  .v3-contactus {
+    width: 768px;
+    margin-top: 70px;
+  }
+  .v3-contactus h2.v3-section-title.v3-contactus-home-title {
+    width: 276px;
+    border: 2px solid #000;
+    padding: 4px;
+    margin: 0 auto;
+    line-height: 1.2;
+  }
+  .v3-contactus h2.v3-section-title.v3-contactus-other-title {
+    margin-bottom: 0;
+  }
+  .v3-contactus > img {
+    width: 100%;
+    border-radius: .5rem;
+    margin-top: 51px;
+  }
+  .v3-contactus .v3-container {
+    width: 96%;
+    margin-top: 49px;
+  }
+  .v3-contactus ul {
+    list-style: none;
+    margin: 0;
+  }
+  .v3-contactus ul li {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 22px;
+    padding-left: 20px;
+    padding-bottom: 9px;
+    position: relative;
+  }
+  .v3-contactus h3.v3-contactus-col-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 15px;
+    margin: 1em 0;
+  }
+/*  .v3-contactus ul li.v3-contactus-tel {
+    background: url(../img/contactus01.png) no-repeat 0 0;
+    background-size: 8%;
+  }
+  .v3-contactus ul li.v3-contactus-pdtel {
+    background: url(../img/contactus02.png) no-repeat 0 0;
+    background-size: 8%;
+  }
+  .v3-contactus ul li.v3-contactus-online {
+    background: url(../img/contactus03.png) no-repeat 0 0;
+    background-size: 18%;
+  }
+  .v3-contactus ul li.v3-contactus-email {
+    background: url(../img/contactus07.png) no-repeat 0 0;
+    background-size: 18%;
+  }
+  .v3-contactus ul li.v3-contactus-community {
+    background: url(../img/contactus08.png) no-repeat 0 0;
+    background-size: 18%;
+  }
+  .v3-contactus ul li.v3-contactus-service_center {
+    background: url(../img/contactus04.png) no-repeat 0 0;
+    background-size: 18%;
+  }
+  .v3-contactus ul li.v3-contactus-store {
+    background: url(../img/contactus05.png) no-repeat 0 0;
+    background-size: 18%;
+  }
+  .v3-contactus ul li.v3-contactus-Weibo {
+    background: url(../img/contactus09.png) no-repeat 0 0;
+    background-size: 18%;
+  }
+  .v3-contactus ul li.v3-contactus-WeChart {
+    background: url(../img/contactus06.png) no-repeat 0 0;
+    background-size: 18%;
+  }*/
+  .v3-contactus a:hover{
+    border-bottom: 1px solid #404559;
+  }
+
+  .v3-contactus .tel,.v3-contactus .pdtel,.v3-contactus .online,.v3-contactus .service_center,.v3-contactus .store,.v3-contactus .WeChart,.v3-contactus .Weibo,.v3-contactus .email,.v3-contactus .community{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    transform: scale(1.4);
+  }
+  .v3-contactus .tel{
+    background: url(/etc/designs/huawei-cbg-site/clientlib-support-v2/support-public/img/v3/v3-icons.svg) -164px -10px no-repeat;
+    }
+  .v3-contactus .pdtel{
+    background: url(/etc/designs/huawei-cbg-site/clientlib-support-v2/support-public/img/v3/v3-icons.svg) -274px -10px no-repeat;
+    }
+  .v3-contactus .online{
+    background: url(/etc/designs/huawei-cbg-site/clientlib-support-v2/support-public/img/v3/v3-icons.svg) -186px -10px no-repeat;
+  }
+  .v3-contactus .email{
+    background: url(/etc/designs/huawei-cbg-site/clientlib-support-v2/support-public/img/v3/v3-icons.svg) -296px -10px no-repeat;
+  }
+  .v3-contactus .community{
+    background: url(/etc/designs/huawei-cbg-site/clientlib-support-v2/support-public/img/v3/v3-icons.svg) -252px -10px no-repeat;
+  }
+  .v3-contactus .service_center{
+    background: url(/etc/designs/huawei-cbg-site/clientlib-support-v2/support-public/img/v3/v3-icons.svg) -208px -10px no-repeat;
+  }
+  .v3-contactus .store{
+    background: url(/etc/designs/huawei-cbg-site/clientlib-support-v2/support-public/img/v3/v3-icons.svg) -318px -10px no-repeat;
+  }
+  .v3-contactus .Weibo{
+    background: url(/etc/designs/huawei-cbg-site/clientlib-support-v2/support-public/img/v3/v3-icons.svg) -340px -10px no-repeat;
+  }
+  .v3-contactus .WeChart{
+    background: url(/etc/designs/huawei-cbg-site/clientlib-support-v2/support-public/img/v3/v3-icons.svg) -230px -10px no-repeat;
+  }
+
+}
+
+@media (min-width: 1025px) {
+  .v3-contactus {
+    width: 879px;
+    margin-top: 70px;
+  }
+  .v3-contactus > img {
+    border-radius: .5rem;
+    margin-top: 51px;
+  }
+  .v3-contactus ul li {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 22px;
+    padding-left: 20px;
+    padding-bottom: 9px;
+    position: relative;
+  }
+/*  .v3-contactus ul li.v3-contactus-tel {
+    background: url(../img/contactus01.png) no-repeat 0 0;
+    background-size: 7%;
+  }
+  .v3-contactus ul li.v3-contactus-pdtel {
+    background: url(../img/contactus02.png) no-repeat 0 0;
+    background-size: 7%;
+  }
+  .v3-contactus ul li.v3-contactus-online {
+    background: url(../img/contactus03.png) no-repeat 0 0;
+    background-size: 16%;
+  }
+  .v3-contactus ul li.v3-contactus-email {
+    background: url(../img/contactus07.png) no-repeat 0 0;
+    background-size: 16%;
+  }
+  .v3-contactus ul li.v3-contactus-community {
+    background: url(../img/contactus08.png) no-repeat 0 0;
+    background-size: 16%;
+  }
+  .v3-contactus ul li.v3-contactus-service_center {
+    background: url(../img/contactus04.png) no-repeat 0 0;
+    background-size: 16%;
+  }
+  .v3-contactus ul li.v3-contactus-store {
+    background: url(../img/contactus05.png) no-repeat 0 0;
+    background-size: 16%;
+  }
+  .v3-contactus ul li.v3-contactus-Weibo {
+    background: url(../img/contactus09.png) no-repeat 0 0;
+    background-size: 16%;
+  }
+  .v3-contactus ul li.v3-contactus-WeChart {
+    background: url(../img/contactus06.png) no-repeat 0 0;
+    background-size: 16%;
+  }*/
+  .v3-contactus .hwimg_hover .v3-contactus-qrcode{
+    top: 31px;
+  }
+}
+
+@media (max-width: 640px){
+  .v3-contactus i{
+      transform: scale(.8);
+      top: 3px!important;
+      left: 7px!important;
+  }
+}
+@media (max-width: 534px){
+  .v3-contactus i{
+      transform: scale(.7);
+      top: 1px!important;
+      left: 4px!important;
+  }
+}
+@media (max-width: 414px){
+  .v3-contactus i{
+      transform: scale(.6);
+      top: -2px!important;
+      left: 4px!important;
+  }
+}
+@media (max-width: 375px){
+  .v3-contactus i{
+      transform: scale(.4);
+      top: -4px!important;
+      left: 4px!important;
+  }
+}
+
+/*联系我门 end*/

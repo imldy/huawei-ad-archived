@@ -1,0 +1,98 @@
+var kk=JQ(".eh-menu .a").data("menu");
+if(kk){
+	var dis=30;
+	for(i=1;i<kk;i++){
+		dis+=JQ(".emo_nv li").eq(i-1).width()+60;
+		}
+	dis+=JQ(".emo_nv li").eq(kk-1).width()/2-3.5;
+	var name=".ehm-" + JQ(".eh-menu .a").data("menu");
+	JQ(".eh-menu b").css("left",dis);
+	JQ(".eh-menu b").removeClass("ehm-0");
+}
+else{
+	JQ(".eh-menu b").hide();
+}
+
+JQ(function() {	
+	JQ(".eh-menu a").mouseover(function(){	
+		JQ(".eh-menu b").removeClass("ehm0 ehm-1");		
+		var k=JQ(this).parent().data("menu");
+		if(k){
+			var dis=30;
+			for(i=1;i<k;i++){
+				dis+=JQ(".emo_nv li").eq(i-1).width()+60;
+				}
+			dis+=JQ(".emo_nv li").eq(k-1).width()/2-3.5;
+			var name=".ehm-" + JQ(this).parent().data("menu");
+
+			JQ(".eh-menu b").css("left",dis);
+			}else{
+				JQ(".eh-menu b").hide();
+				}		
+
+	});
+	
+	JQ(".eh-menu").mouseleave(function(){
+		JQ(".eh-menu b").removeClass("ehm0 ehm-1");	
+		var kkt=JQ(".eh-menu .a").data("menu");
+		if(kkt){
+			var dis=30;
+			for(i=1;i<kkt;i++){
+				dis+=JQ(".emo_nv li").eq(i-1).width()+60;
+				}
+			dis+=JQ(".emo_nv li").eq(kkt-1).width()/2-3.5;
+			var name=".ehm-" + JQ(".eh-menu .a").data("menu");
+			JQ(".eh-menu b").css("left",dis);
+			}else{
+				JQ(".eh-menu b").hide();
+				}
+
+	})
+	
+});
+JQ(".topbar-secarea").mouseover(function(){
+	JQ("#showarealau").css("display", "block");
+	JQ(".topbar-tri").removeClass("topbar-whitetri");
+	JQ(".topbar-tri").addClass("topbar-greytri");
+});
+JQ(".topbar-secarea").mouseleave(function(){
+	JQ("#showarealau").css("display", "none");
+	JQ(".topbar-tri").removeClass("topbar-greytri");
+	JQ(".topbar-tri").addClass("topbar-whitetri");
+});
+JQ(".showcountry a").mouseenter(function(){
+	JQ(this).css("color", "#fff");
+});
+JQ(".showcountry a").mouseleave(function(){
+	JQ(this).css("color",'#7c7c7c');
+});
+var emuilist = document.getElementById("downlist-top");
+var emlist1= '<div class="topbar-downlist" id="topbar-downlistid" style="width: 120px; left:-28px; margin-left: 0;">';
+var emlist2= '<a href="http://emui.huawei.com/cn/" target="_blank" rel="noopener noreferrer" style="margin: 0;">EMUI</a>';
+var emlist3= '<a href="http://cloud.huawei.com/cn/" target="_blank" rel="noopener noreferrer" style="margin: 0;">华为终端云空间</a>';
+var emlist4= '<a href="http://appstore.huawei.com/" target="_blank" rel="noopener noreferrer" style="margin: 0;">应用市场</a>';
+var emlist5= '<a href="http://developer.huawei.com/cn/consumer/" target="_blank" rel="noopener noreferrer" style="margin: 0;">开发者联盟</a>';
+var emlist6= '</div>';
+if(emuilist != null) {
+    JQ(emuilist).closest('li').css('position','relative');
+	emuilist.innerHTML = emuilist.innerHTML + emlist1 + emlist2 + emlist3 + emlist4 + emlist5 + emlist6;
+}
+
+JQ("#toptb .topbar-nav li.active").mouseover(function(){
+	JQ("#toptb li.active .topbar-downlist").css("display", "block");
+});
+JQ("#toptb .topbar-nav li.active").mouseleave(function(){
+	JQ("#toptb li.active .topbar-downlist").css("display", "none");
+});
+JQ("#toptb li.active .topbar-downlist").mouseover(function(){
+	JQ("#toptb li.active .topbar-downlist").css("display", "block");
+});
+JQ("#toptb li.active .topbar-downlist").mouseleave(function(){
+	JQ("#toptb li.active .topbar-downlist").css("display", "none");
+});
+JQ('#toptb li.active .topbar-downlist a').mouseover(function(){
+	JQ(this).addClass('item-hover');
+});
+JQ('#toptb li.active .topbar-downlist a').mouseleave(function(){
+	JQ(this).removeClass('item-hover');
+});

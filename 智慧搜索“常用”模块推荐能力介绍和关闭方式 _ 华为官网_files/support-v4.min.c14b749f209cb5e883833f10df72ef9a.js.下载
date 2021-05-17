@@ -1,0 +1,75 @@
+var EVENT_TYPE_EMAIL_SUBMIT_SUCCESS="emailSubSuccess";
+var EVENT_TYPE_EMAIL_SUBMIT_FAIL="emailSubFail";
+var EVENT_TYPE_SPAREPART_PRICE="supportSparepartPrice";
+var EVENT_TYPE_M2M_DISTRIBUTOR="m2mDistributor";
+var EVENT_TYPE_CONTACT_US_FEEDBACK="contactUsFeedback";
+var EVENT_TYPE_CONTACT_US_HOTLINE="contactUsHotline";
+var EVENT_TYPE_CONTACT_US_TECHNICAL="contactUsTechnical";
+var EVENT_TYPE_APPOINTMENT_SERVICE="appointmentServiceSuccess";
+var EVENT_TYPE_FIND_A_STORE="findAStore";
+var EVENT_TYPE_SUPPORT_SEARCH_AND_RESULT="supportSearchAndResultSuccess";
+var EVENT_TYPE_PRODUCT_FILTER="headerProductFilter";
+var EVENT_TYPE_PRODUCT_COMPARE_ADD="productCompareAdd";
+var EVENT_TYPE_PRODUCT_CANCEL_CLOSE="productCancelClose";
+var EVENT_TYPE_PRESS_NEWS_LIST="pressNewsList";
+var EVENT_TYPE_PRESS_NEWS_LIST_SEARCH="pressNewsListSearch";
+var EVENT_TYPE_PRESS_AWARD_LIST="pressAwardList";
+var EVENT_TYPE_PRESS_VIDEO_LIST="pressVideoList";
+var EVENT_TYPE_PDP_FAQ_SEARCH="supportPdpFaqSearch";
+var EVENT_TYPE_FAQ_PDP_FEEDBACK="faqDetailpageIsthisContentHelpful";
+var EVENT_TYPE_POST_REPAIR="submitPostalRepairApointment";
+var EVENT_TYPE_FIND_SERVICE_CENTER_COUNTRY_CITY="submitFindServiceByCountryCity";
+var EVENT_TYPE_FIND_SERVICE_CENTER_DISTANCE="submitFindServiceByAddressDistance";
+var EVENT_TYPE_VIDEO_CLOSED="videoClosed";
+var EVENT_TYPE_SEARCH_RECYCLING_POINT="searchRecyclingPoint";
+var EVENT_TYPE_SP_LANDING_PAGE_SEARCH="supportLandingPageSearch";
+var EVENT_AUTO_SUGGEST_SEARCH="autoSuggestSearch";
+var EVENT_PURE_SEARCH="pureSearch";
+var EVENT_SEARCH_BY_DROPDOWN_FILTER="searchByDropdownFilter";
+var EVENT_COMPARISON_FILTER="comparisonFilter";
+var EVENT_CLICK_FIND_SERVICE_CENTER="clickOnSupportServiceCenterResult";
+var EVENT_TYPE_SHOW_CONTENT="showContent";
+var EVENT_TYPE_HIDE_CONTENT="hideContent";
+var EVENT_TYPE_HOTSPOTS_CLICK="hotspotsClicked";
+var EVENT_TYPE_PS_PRODUCT_LISTING_SEARCH="supportProductListingSearch";
+var EVENT_TYPE_SUPPORT_PDP_DROPDOWN="supportPdpDropdown";
+var EVENT_TYPE_HOT_SEARCH="HotSearch";
+var EVENT_TYPE_SUPPORT_SEARCH="SupportSearch";
+var EVENT_TYPE_OPEN_MENU_FIRST_LEVEL="openMenuFirstLevel";
+var EVENT_TYPE_OPEN_MENU_SECOND_LEVEL="openMenuSecondLevel";
+var EVENT_TYPE_SUPPORT_SEARCH_AUTO_SUGGEST="supportSearchAutoSuggest";
+var EVENT_TYPE_NEWS_LIST_LOAD_MORE="newsListLoadMore";
+var EVENT_TYPE_PRODUCT_MENU_MODULE_LOAD_MORE="productMenuModuleLoadMore";
+var EVENT_TYPE_SEARCH_RECYCLING_STORE_CLICK="searchRecyclingStoreClick";
+var EVENT_TYPE_EXPRESS_REPAIRE_SERVICE_MODIFY="expressRepaireServiceModify";
+var EVENT_TYPE_EXPRESS_REPAIRE_SERVICE_SUBMIT="expressRepaireServiceSubmit";
+var EVENT_TYPE_REPAIR_STATUS_INQUIRY_SUMBIT="repairStatusInquirySumbit";
+var EVENT_TYPE_DOOR_TO_DOOR_SERVICE_SUBMIT="doorToDoorServiceSubmit";
+var EVENT_TYPE_APPOINTMENT_SERVICE_MODIFY="appointmentServiceModify";
+var EVENT_TYPE_APPOINTMENT_SERVICE_SUBMIT="appointmentServiceSubmit";
+var EVENT_TYPE_WARRANTY_QUERY_SUBMIT="warrantyQuerySubmit";
+var EVENT_TYPE_TOPIC_PAGE_INTERACTIONS="topicPageInteractions";
+var EVENT_TYPE_TOPIC_LIST_SITE_SEARCH="topicListSiteSearch";
+var EVENT_TYPE_MAIL_SERVICE_SUBMIT="mailServiceSubmit";
+var EVENT_TYPE_HOME_PAGE_SITE_SEARCH="homePageSiteSearch";
+var EVENT_TYPE_SPAREPARTS_PRICE_SUBMIT="sparePartsPriceSubmit";
+var EVENT_TYPE_USER_CENTER_ADD="userCenterAdd";
+var EVENT_TYPE_USER_CENTER_MODIFY="userCenterModify";
+var EVENT_TYPE_USER_CENTER_DELETE="userCenterDelete";
+function analyticsSubmit(a,b,f,e){if(!a||!b||!f){return
+}var g={cat:a,act:b,lab:f,customEventType:e};
+for(var d=4;
+d<arguments.length;
+d++){for(var c in arguments[d]){g[c]=arguments[d][c]
+}}DataLayerUtil.addEvent(g);
+DataLayerUtil.triggerEvent(e)
+}var DataLayerUtil={addEvent:function(a){window.digitalData.event.push({eventInfo:a})
+},getEvent:function(a,c){var e=null;
+try{if(digitalData&&digitalData.event&&digitalData.event instanceof Array){for(i=digitalData.event.length-1;
+i>=0;
+i--){if(digitalData.event[i].eventInfo.customEventType==a&&digitalData.event[i].eventInfo[c]){var d=digitalData.event[i].eventInfo[c];
+if(d){e=getContent(d.toString()).trim()
+}break
+}}}}catch(b){}return e
+},triggerEvent:function(a){$(document).trigger(a)
+}};

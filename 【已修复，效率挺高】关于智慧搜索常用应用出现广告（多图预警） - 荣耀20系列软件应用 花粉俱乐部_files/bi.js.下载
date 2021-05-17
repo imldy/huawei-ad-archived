@@ -1,0 +1,10 @@
+var tracker_url = 'https://metrics1.data.hicloud.com:6447';
+var site_id = 'cn.club.vmall.com';
+var _paq = _paq || [];
+_paq.push(['setTrackerUrl', tracker_url + '/webv1']);
+_paq.push(['setSiteId', site_id]);
+
+var js = document.createElement('script');
+js.setAttribute('type', 'text/javascript');
+js.setAttribute('src', tracker_url + '/hianalytics.js');
+document.getElementsByTagName('head')[0].appendChild(js);

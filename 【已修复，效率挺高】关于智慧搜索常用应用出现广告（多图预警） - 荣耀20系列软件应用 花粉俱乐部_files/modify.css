@@ -1,0 +1,286 @@
+.thdpp-cont img{max-height: 18px;}
+#ct img{max-width: 100%;}
+
+.ticklist tr:nth-child(odd) {background: #F2F2F2;}
+.ticklist tr td:nth-child(odd) {padding-right: 3px;}
+.ticklist tr td:nth-child(even) {padding-left: 3px;}
+.ticklist tr td{box-sizing: border-box;display: inline-block;width: 50%;text-align: center;font-size: 12px;color: #333;padding: 19px 16px;}
+.tick_btm{padding: 20px 16px 0;font-size: 0;}
+.tickbtm_t>a{box-sizing: border-box;display: inline-block;width: 50%;font-size: 12px;color: #11a3ff;text-decoration: none;text-align: center;margin: 18px 0;}
+.tickbtm_b{font-size: 0;}
+.tickbtm_t>a:nth-child(odd){padding-right: 2px;}
+.tickbtm_t>a:nth-child(even){padding-left: 2px;}
+.tickbtm_b{padding-bottom: 18px;}
+.tickbtm_b>.btn_box{display: inline-block;width: 50%;text-align: center;}
+.tickbtm_b button{background: #11a3ff;font-size: 13px;color: #fff;border: none;padding: 10px 18px;height: 36px;line-height: 15px;border-radius: 18px;outline: none;}
+.tickbtm_b .click_btn{background: #f2f2f2;color: rgba(26,26,26,.3);}
+/*反馈列表页*/
+.contop{line-height: 1.2;padding: 8px 16px;font-size: 16px;height: 48px;color: rgba(255,255,255,1);box-sizing: border-box;border-bottom: 0;text-align: left!important;}
+.callback{position: relative;top: 6px;width: 24px;height: 24px;display: inline-block;}
+.contop .hb-htbar{margin-left: 5px;line-height: inherit;font-size: 18px;color: rgba(0, 0, 0, 1);display: inline-block;background-color: transparent;}
+.ticklist_box{font-size: 0;}
+.ticklist_box_web{font-size: 0; width: 495px; height: 223px; overflow: auto; }
+.tickuc{width: 25%;text-align: center; margin-top: 16px;margin-bottom: 8px;display: inline-block;}
+.tickuc_icon{background-size: 100% 100%;margin: 0 auto;width: 48px;height: 48px;border-radius: 50%;background: #f2f2f2;position: relative;}
+.tickuc_icon img{max-width: 100%;border-radius: 50%;}
+.tickuc_name{ width: 60px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;display: inline-block;margin-top: 10px;color: rgba(26,26,26,1);font-size: 12px;transform: scale(0.83);-webkit-transform: scale(0.83);-moz-transform: scale(0.83);-o-transform: scale(0.83);-ms-transform: scale(0.83);}
+.add_v{display: inline-block;width: 14px;height: 14px;background: url(../image/zh/forum/ic_me_vip.png) no-repeat;background-size: 100% 100%;position: absolute;right: 0;bottom: 0;}
+
+.coHov { float: right !important; position: relative;}
+.codeHov { float: none !important; display: block; line-height: 36px; height: 36px !important; color: #B7B7B7 !important; padding-left: 18px !important; background: url(/static/image/huafen/ipoG.png) no-repeat left center; background-size: 16px 16px; margin-right: 15px;}
+.codeHov:hover { color: #fff !important; background: url(/static/image/huafen/ipoF.png) no-repeat left center; background-size: 16px 16px;}
+.codeSe { display: none; position: absolute; top: 36px; left: 0; background: #fff; width: 182px; height: 212px; z-index: 22; box-shadow: 0 2px 20px rgba(0,0,0,0.1);}
+.coBox { width: 151px; height: 151px; margin: 16px auto;}
+.coBox img { display: block; width: 100%; height: 100%;}
+.coWord { color: #333; font-size: 16px; text-align: center; line-height: 18px;}
+.y .rt { padding-left: 0 !important;}
+.s_p_icon{margin-left: 5px;margin-bottom: 2px;}
+/*20190222 add 帖子列表页最新消息提醒添加样式 by lyy start*/
+.newthread .common{padding: 12px 5px;}
+.tl td.fn {padding-right:0; }
+.tl td.fn .thdpp-cont .thd-ico{margin-right: 17px;}
+
+.pl .quote blockquote{width:88%;}
+
+/*20190611 add 公测活动按钮样式 by zhudi*/
+.click_end {background: #f2f2f2;color: rgba(26,26,26,.3);border-color: #f2f2f2;border-radius: 10px;border-style: solid;border-width: 1px;text-align: center;}
+.public_block {margin-bottom: 60px;margin-top: 16px;}
+/*20190611 add 公测活动按钮样式 end*/
+.changNickT{ border: 1px dashed red; padding: 8px;}
+.repeat_tips{background: #FFB6C1;  border: 1px solid red;}
+/*20190715 add 修复花粉首页overflow在IE7下无效 by lyy  start*/
+.hbwi-right{position: relative;}
+/*20190715 add 修复花粉首页overflow在IE7下无效 by lyy end*/
+
+/*20190809 add 优化PC端右侧栏样式 by lyy start*/
+.hbwir-postacts li{color: #8D8D8D;font-size: 10px;padding: 1px 0;}
+.mkclearfix-three li{width: 33.3333%;box-sizing: border-box;}
+.mkclearfix-two li{width: 50%;box-sizing: border-box;}
+.pa-fb .deco{width: 20px;height: 20px;}
+.pa-fb:hover .deco {background-position: -100px -899.5px;}
+.pa-dp .deco{background-position: -148px -850px;width: 20px;height: 20px;}
+.pa-dp:hover .deco {background-position: -148px -900px;}
+.pa-pf .deco{background-position: -198px -850px;width: 20px;height: 20px;}
+.pa-pf:hover .deco {background-position: -198px -900px;}
+.pa-fx .deco{background-position: -246px -850px;width: 20px;height: 20px;}
+.pa-fx:hover .deco {background-position: -246px -900px;}
+.hbwir-postacts li span{margin-top: 10px;line-height: 12px;font-size: 10px;}
+/*20190809 add 优化PC端右侧栏样式 by lyy end*/
+
+/*20191031 add 首页样式改版 by lyy start*/
+.protalHpg .hbw-article .hbwa-share,.protalHpg .hbw-article .hbwa-replies{position: static;float: right;font-size: 14px;color: #9B9B9B;height: 18px;line-height: 19px;}
+.protalHpg .paTitleName{margin: 25px 0 0 25px;font-size: 24px;line-height: 29px;color: #333333;}
+.protalHpg .hbw-article{padding: 25px 0;margin: 0 25px;border-bottom: 1px solid #e6e6e6;border-top: 0;}
+.protalHpg .hbw-article h3 {margin-top: 0px;font-size: 20px;color: #333333;line-height: 24px;margin-bottom: 16px;}
+.protalHpg .hbw-article .portal-descr-top{margin: 22px 0 0px;height: 21px;}
+.protalHpg .portal-descr-top .protalForumB{background-color: rgba(92,189,196,.2);color: #5CBDC4;height: 21px;display: inline-block;padding: 0 8px;border-radius: 5px;max-width: 143px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.protalHpg .portal-descr-top .protalForumB strong{font-size: 14px;color: #5CBDC4;line-height: 17px;font-weight: 500;height: 21px;line-height: 21px;}
+.protalHpg .hbwa-details a{font-size: 14px;color: #9B9B9B;line-height: 21px;max-width: 110px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;display: inline-block;}
+.protalHpg .hbwa-details a:hover,.protalHpg .portal-descr-top .protalForumB strong:hover{color: #24b9bf;}
+.protalHpg .hbwa-details i{margin-top: 2px;font-size: 14px;color: #9B9B9B;line-height: 17px;display: inline-block;margin-left: 20px;vertical-align: top;}
+.protalHpg .hbwa-details {display: inline-block;margin-left: 20px;height: 21px;line-height: 21px;vertical-align: top;}
+.hbwa_detNIcon{width: 21px;height: 21px;border-radius: 50%;vertical-align: top;margin-right: 5px;}
+.protalHpg div.ha-first {border-top: none;}
+
+/*大图*/
+.portalBoneImg>a {display: inline-block;width: 658px;height: 216px; position: relative; overflow: hidden; border-radius: 5px;}
+.portalBoneImg>a img{width: 100%;}
+
+/*左图*/
+.portarlLeftIcont{overflow: hidden;}
+.portarlLeftIcont a{display: inline-block;width: 158px;height: 108px;overflow: hidden;float: left;border-radius: 5px; position:relative;}
+.portarlLeftImg .portarlLeftIcont h3{width:484px;float: right;margin-bottom: 0px;}
+.portarlLeftIcont h3 a{width: 100%;}
+
+/*四图*/
+.portarlFourImg .hbw-imgCont ul{overflow: hidden;position: relative;}
+.portarlFourImg .hbw-imgCont ul li{width: 158px;height: 108px;float: left;margin-left: 8px;border-radius: 5px;overflow: hidden; position:relative;}
+.portarlFourImg .hbw-imgCont ul li:first-child{margin-left: 0;}
+
+/*加载更多按钮*/
+.NextPg-pro{margin: 0 auto;display: block;width: 180px;height: 40px;font-size: 16px;color: #5CBDC4;line-height: 40px;text-align: center;border: 1px solid #5CBDC4;border-radius: 26px;margin-top: 25px;}
+.NextPg-pro i{display: inline-block;width: 14px;height: 100%;background: url(../image/zh/portal/arrowDBlePro.png) no-repeat center;background-size: 14px 7px;vertical-align: top;margin-left: 5px;padding-top: 2px;}
+/*加载按钮无数据类名*/
+.NextPgnomal{border: none;color: #ccc;}
+
+/*签到*/
+.protalHpg .sign{padding: 24px 18px 18px 18px;}
+.protalHpg .sign .todaymem{font-size: 16px;color: #333333;margin-bottom: 9px;line-height: 20px;font-weight: bold;}
+.protalHpg .sign .sign-num{font-size: 24px;color: #FF684A;line-height: 29px;margin-bottom: 13px;font-weight: bold;}
+.protalHpg .sign-btn{line-height: 20px;padding: 10px 0;background: #5CBDC4;font-weight: bold;}
+.protalHpg .sign-btn-qd{border: 1px solid #e4e4e4;background: #F8F8F8;color: #CCCCCC;}
+.protalHpg .sign-btn:hover {background-color: #09b0b7;}
+
+.portalTjForumCopy{height: 1px;}
+.plateDiy5Fixed{position: fixed;top: 49px;width: auto;z-index: 9;width: 238px;}
+/*首页样式*/
+.protalHpg .hbw-article .hbwa-share{margin-left: 20px;padding-left: 0;background: none;margin-top: 2px;}
+.protalHpg .hbw-article .hbwa-share:hover{background: none;}
+.protalHpg .hbw-article .hbwa-share i{display: inline-block;font-style: normal;vertical-align: top;width: 18px;height: 18px;background-image: url(../image/zh/css/img/hbwmain.png);background-repeat: no-repeat;background-position: -250px -49px;}
+.protalHpg .hbw-article .hbwa-share:hover i{background-position: -200px -49px;}
+.protalHpg .picNum{position: absolute;right: 0;bottom: 0;font-size: 12px;color: #FFFFFF;background: rgba(0,0,0,.5);height: 23px;line-height: 23px;padding: 0 12px;border-radius: 12px 0 0 12px;}
+#nv_search #ft{margin:auto;}
+.protalHpg .hbw-article .hbwa-replies{margin-top: 1px;}
+/*首页视频贴播放按钮*/
+.protalHpg .playICONbtn{display: inline-block;width: 24px;height: 24px;position: absolute;top: 42px;left: 67px;background: url(../image/zh/portal/ic_playBtn.png) no-repeat center;background-size: 100%;z-index: 10;}
+
+/*修改PC端帖子详情页视频属性*/
+.showvideo{width: 100%;height: 375px;}
+
+/*20191120 add 前台管理面板审核下拉单样式 by zhudi start*/
+.aud select {width: 114px;border-radius: 5px;-webkit-appearance: none;background: #FFF url(/static/image/common/newarow.gif) no-repeat 100% 0;}
+/*end*/
+
+/*20191216 add 视频帖子详情页 by lyy start*/
+.threadVideoImg{text-align: center;}
+.threadVideoImg img{width: 200px;}
+/*end*/
+
+/*20200217 add 喷射符超出隐藏 by lyy start*/
+#pt .z a,.ts h1,.t_f{overflow: hidden;}
+/*end*/
+
+/*20200326 add 勋章图标结构修改属性 by lyy start*/
+.card .card-cont .card-medal a{margin: 5px 0;margin-right: 6px;width: calc(50% - 10px);text-align: center;width: -moz-calc(50% - 10px);width: -webkit-calc(50% - 10px);display: inline-block!important;vertical-align: top;}
+.card-medalname{display: block;text-align: center;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;vertical-align: middle;}
+.medal-list li{display: inline-block;float: none;vertical-align: top;}
+.card-medalimgbox{display: inline-block;width: 50px;height: 50px;text-align: center;margin-right: 5px;}
+/*end*/
+
+/*20200409 add 帖子详情页 话题标签 start*/
+.viewthread_thread_tag{float: left;font-size: 12px;color: #427eef;font-weight: 700;margin-right: 15px;}
+.viewthread_thread_tag a{color: #427eef;}
+.viewthread_topic_tag{float: left;font-size: 12px;margin: 5px 0 10px; color: #427eef;font-weight: 700;background:url(../../../static/image/neweditor/ic_topic.png) no-repeat;background-size: 10px auto;background-position: left center; padding-left:14px;}
+.viewthread_topic_tag a{color: #427eef;}
+.modact_topic{padding:34px 0 0;}
+#fwin_content_choosetopic .emp{display: block;width: 100%;text-align: left;margin: 0;padding: 0;font-size: 12px;color: #000;}
+#fwin_content_choosetopic input[type="text"]:focus{border: 1px solid;border-color: #848484 #E0E0E0 #E0E0E0 #848484;background: #FFF url(/static/image/common/px.png) repeat-x 0 0;}
+.topic_addtag:hover {color: #427eef;  }
+/*end*/
+
+/*20200426 add 添加有用图标 start*/
+.useIcon{background: url(/static/image/common/useIcon-pc.png) no-repeat 0 48%;}
+
+/*end*/
+
+/*20200518 add 优化表情图标 start*/
+#ct .bbda .ptm .replayPcImg,#msglist .mbm .replayPcImg{max-width: 500px;max-height: 500px;width: auto!important;height: auto!important;cursor: pointer;}
+.pmd .replayPcImg{max-width: 292px;width: auto;height: auto;}
+.hbw-wrapper img{border-radius: 5px;}
+/*消息列表/详情页*/
+.epm_c span .emjImg,.epm_c tr td .emjImg,.bbda .ptm .emjImg{width: 14px!important;height: 14px!important;vertical-align: -1px;}
+.epm_c span .emjGif,.epm_c tr td .emjGif,.bbda .ptm .emjGif{width: 80px!important;height: 80px!important;}
+
+/*点评 静态图标*/
+.pct .pcb .emjImg{width: 18px!important;height: 18px!important;vertical-align: -2px;}
+.pstl .psti .emjImg{width: 16px!important;height: 16px!important;vertical-align: -2px;}
+.pstl .psti .emjGif{width: 27px!important;height: 27px!important;}
+/*评论 静态/动态表情*/
+.pcb .t_f .emjImg{width: 24px!important;height: 24px!important;vertical-align: -6px;}
+.pcb .t_f .emjGif{width: 68px!important;height: 68px!important;vertical-align: bottom;}
+/*end*/
+
+/*20200604 add PK贴 start*/
+.ContentDebate ul{font-size: 0;}
+.ContentDebate ul p{z-index: 9;position: relative;line-height: 17px;}
+.debate1,.debate2{position: relative;display: inline-block;width: calc(50% - 10px); width: -moz-calc(50% - 10px);width: -webkit-calc(50% - 10px);padding: 15px;box-sizing: border-box;vertical-align: top;border-radius: 8px;font-size: 16px;text-align: justify;text-justify: inter-word;}
+.debate1{color: #11A3FF;background: rgba(17,163,255,0.07);margin-right: 20px;}
+.debate2{color: #FF5356;background: rgba(255,83,86,0.07);}
+.debate1:before,.debate2:before{display: block;content: ' ';position: absolute;bottom: -18px;border:9px solid transparent;}
+.debate1:before{border-top:9px solid rgba(17,163,255,0.07);left: 15px;}
+.debate2:before{border-top:9px solid rgba(255,83,86,0.07);right: 15px;}
+.debate1Winner:after,.debate2Winner:after,.debateDraw:after{display: table;content: ' ';width: 73px;height: 65px;position: absolute;top: -37px;}
+.debate1Winner:after{background: url(../image/zh/css/img/winnerLeft.png) no-repeat;background-size: 100% auto;left: 0;}
+.debate2Winner:after{background: url(../image/zh/css/img/winnerRight.png) no-repeat;background-size: 100% auto;right: 0;}
+.debateDraw:after{background: url(../image/zh/css/img/winnerDraw.png) no-repeat;background-size: 100% auto;left: 100%;margin-left: -30px;}
+
+/*选中*/
+.voteseleted .voteLeftBtn{background: url(../image/zh/css/img/tetragonal_select.png) no-repeat;background-size: 100% auto;background-position: right bottom;}
+.voteseleted .voteRightBtn{background: url(../image/zh/css/img/antithesis_selsect.png) no-repeat;background-size: 100% auto;background-position: left bottom;}
+
+
+.voteModule{font-size: 0;text-align: center;position: relative;}
+.voteLeft{position: absolute;left: 0;top: -36px;text-align: left;}
+.voteRight{position: absolute;right: 0;top: -36px;text-align: right;}
+.voteLeftBtn,.voteRightBtn{display: inline-block;width: 48px;height: 68px;margin-top: -2px;position: relative;cursor:pointer;}
+.voteLeftBtn{background: url(../image/zh/css/img/voteLeftIcon.png) no-repeat;background-size: 100% auto;background-position: right bottom;}
+.voteRightBtn{background: url(../image/zh/css/img/voteRightIcon.png) no-repeat;background-size: 100% auto;background-position: left bottom;}
+.voteModule>div>p{text-align: center;font-size: 12px;line-height: 12px;margin-top: 2px;}
+.voteLeftNum{color: #0F95FF;}
+.voteRightNum{color: #FB493C;}
+.voteMiddle>ul{text-align: center;}
+.voteLogoIcon{position: absolute;top: -38px;left: calc(50% - 43px);display: inline-block;width: 86px;height: 93px;background: url(../image/zh/css/img/PKIcon.png) no-repeat;background-size: 100% auto;}
+.voteMiddle{margin: 0 auto;margin-top: 37px;margin-bottom: 48px;text-align: center;}
+.voteMidLeft{display: inline-block; height: 16px;width: 48%;background: linear-gradient(to right, #008CFF 0%,#6CDBFF 100%);}
+.voteMidRight{display: inline-block; height: 16px;width: 48%;background: linear-gradient(to right,  #FFCE77 0%,#FA332E 100%);}
+.voteLeftGif,.voteRightGif{display: inline-block;width: 100%;height: 100%;display: none;}
+.voteLeftGif{background: transparent no-repeat;background-size: 100% auto;background-position: right bottom; }
+.voteRightGif{background: transparent no-repeat;background-size: 100% auto;background-position: right bottom; }
+#threadlist .hbt-postmes .hbt-artc{overflow: initial;}
+
+/*end*/
+
+/*管理操作移动帖子时，搜索框与展示的一些样式*/
+#movetoforum li:hover{
+    cursor:pointer;
+    color:#28c0c6;
+}
+#movetothread {
+    width: 155px;
+}
+#searchf,#defaultforum ul {
+    max-height: 360px;
+    min-height: 110px;
+    overflow-y: auto;
+}
+/*20200604 add 贴子详情页 楼主认证 bylyy start*/
+.replayBox{position: relative;}
+.recognitionIcon_PC{position: absolute;right: 28px;top: 35px;width: 94px;}
+
+/*end*/
+/*20200817 add 移动操作 搜索板块列表 bylyy start*/
+.iptWap{display: inline-block;position: relative;}
+.iptWap #movetothread{width: 126px;vertical-align: middle;padding-left: 5px;box-sizing: border-box;}
+.iptWap .arrowDown{display: inline-block;width: 22px;height: 22px;vertical-align: middle;border: 1px solid;border-color: #848484 #E0E0E0 #E0E0E0 #848484;background: #FFF url(/static/image/common/newarow.gif) no-repeat 100% 0;}
+.forumSearch{overflow: inherit!important;}
+
+#defaultforum{display: none;}
+#movetoforum,#defaultforum{position: absolute;left: 0;width: auto;min-width: 150px;top: 32px;z-index: 99;background: #fff;border: 1px solid #7395cb;}
+#movetoforum ul li,#defaultforum ul li{padding:0 4px;box-sizing: border-box;}
+#defaultforum ul li p{margin-left: 12px;}
+/*end*/
+
+
+/*20200817 add 移动操作 搜索板块列表 bylyy start*/
+.ed_conW{float: left;margin-top: 5px;}
+.InformationLi{margin-bottom: 12px;}
+.selectBox{display: inline-block;position: relative;vertical-align: top;margin-bottom: 8px;}
+.selectBox .newdpbtn{position: absolute;left: 105px;}
+.serialNumber{float: left;line-height: 22px;text-align: center;width: 40px;font-size: 14px;margin-bottom: 12px;border-radius: 12px;background: #fff;border: none;cursor: pointer;}
+.optionLi,.addOptionsBtn,.addInformBtn{height: 24px;line-height: 24px;font-size: 14px;border: none;border-radius: 12px;background: #fff;padding: 0 12px;box-sizing: border-box;outline: none;width: 120px;}
+.addOptionsBtn{width: 120px;cursor: pointer;}
+.addInformBtn{width: 180px;text-align: center;cursor: pointer;}
+.dropList{display: none;position: absolute;top: 22px;right: 5px;padding: 4px;border: 1px solid;min-width: 60px;border-color: #DDD;background: #FEFEFE;box-shadow: 1px 2px 2px rgba(0,0,0,0.3);z-index: 1;}
+.dropList li{display: block;padding: 3px 5px;border-bottom: 1px solid #E5EDF2;white-space: nowrap;}
+.dropList li:last-child{border-bottom: none;}
+.dropList li:hover{color: #24b9bf;background-color: #E5EDF2;text-decoration: none;}
+.optionList{display: inline;}
+.deleteInfo{display: inline-block;height: 24px;line-height: 24px;padding: 0 15px;font-size: 14px;cursor: pointer;color: #c7000b;}
+.optionLi{margin-bottom: 8px;}
+.ed_noteditable{color: #ccc}
+
+#activity .actl label .px{vertical-align: sub;}
+
+/*end*/
+/*20210304 add foot bygdx start*/
+.footWb { display: inline-block; margin-left: 10px; width: 19px; height: 19px; background: url("../image/zh/css/img/wbIconG.png") no-repeat center; background-size: 100%; vertical-align: middle; }
+.footWb:hover { background: url("../image/zh/css/img/wbIconB.png") no-repeat center; background-size: 100%;}
+.footWx { display: inline-block; margin-left: 10px; width: 27px; height: 14px; background: url("../image/zh/css/img/wxIconG.png") no-repeat center; background-size: 100%; vertical-align: middle; }
+.footWx:hover { background: url("../image/zh/css/img/wxIconB.png") no-repeat center; background-size: 100%;}
+
+.subBanner { margin: 10px auto 0; width: 960px; overflow: hidden;}
+.subBanChi {width: 314px; margin-right: 9px; float: left; border-radius: 5px; overflow: hidden;}
+.subBanner .subBanChi:nth-child(3) { margin-right: 0;}
+.subBanImg { width: 314px; height: 174px; display: block;}
+/*end*/
+

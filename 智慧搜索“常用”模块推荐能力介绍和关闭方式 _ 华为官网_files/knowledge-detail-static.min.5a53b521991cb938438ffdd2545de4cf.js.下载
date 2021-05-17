@@ -1,0 +1,348 @@
+$(function(){var n=window.innerWidth||$(window).width();
+var q=n<768?true:false;
+var b=$("#ENABLE_ADAPTABLE_FOLD").val();
+r(t());
+o();
+g();
+c();
+w();
+var f=0;
+$(document).ready(function(){j();
+if(b){a()
+}else{$(".adaptable-area-normal").show();
+c();
+w()
+}});
+function c(){var z=$(".s-wrapplayskill .s-phonetype").height();
+if(z>parseInt($(".s-wrapplayskill .s-phonetype").css("line-height"))){$(".s-wrapplayskill .box").addClass("s-more s-phonetype")
+}}function w(){var z=$(".s-wrapplayskill .box-r .s-tips").height();
+if(z>parseInt($(".s-wrapplayskill .box-r .s-tips").css("line-height"))){$(".s-wrapplayskill .box .box-r").addClass("s-more-emui")
+}}function t(){var A=location.pathname.substring(0,location.pathname.length-1);
+var z=A.substring(A.lastIndexOf("/")+1);
+return z
+}function r(B){var z={knowledgeId:B,channelCode:"10004",countryCode:window.digitalData.page.pageInfo.countryCode};
+var A=apiurl+"/tkb/createKnowViewLog/1000";
+$.ajax({url:A,type:"GET",dataType:"html",dataType:"jsonp",jsonp:"jsonp",data:z,success:function(C){}})
+}function o(){$("#tkb-content a").each(function(){var A=$(this);
+var z=A.attr("href");
+if(z){if(0===z.indexOf("#")){A.click(function(){event.preventDefault();
+$("html,body").animate({scrollTop:($(A.attr("href")).offset().top-120)},1000)
+})
+}}})
+}function g(){$("#tkb-content").on("click","img",function(){var B=$(this);
+if(B.parent().hasClass("uicontrol")||B.parent().hasClass("notespanimage")){return false
+}var z=B.attr("src");
+var A=B.attr("alt");
+$(".zoom-in-pic").attr("src",z);
+$(".zoom-in-pic").attr("alt",A);
+$(".zoom-in-pic").focus();
+$(".tkb-zoom-in").show()
+});
+$(".tkb-zoom-in").on("click",function(){$(".tkb-zoom-in").hide()
+})
+}function j(){var z=$("#tkb-attachments-info").val();
+if(z){var D=JSON.parse(z);
+var C=$(".tkb-attachements-list");
+for(var A=0;
+A<D.length;
+A++){var B='<li><a href="'+D[A].url+'">'+D[A].fileName+"</a></li>";
+C.append(B)
+}}}function a(){var F=$("#knowledgeTitle").text()||"";
+F=F.trim();
+var B=d("productId");
+var C=d("emuiId");
+var E=$(".adaptable-area-spec .product-area-text-desc").text();
+if(E.indexOf(":")==(E.length-1)||E.indexOf("：")==(E.length-1)){var z=E.length;
+E=E.substr(0,z-1)
+}$(".product-catalog-tree-mobile .result-tree-title").text(E);
+var A=getSiteLanguage();
+var D={knowledgeTitle:F,languageCode:A,curPage:"1",pageSize:"50",channel:"10004"};
+apiKnowledgeBase.queryExtendedAttrList(D,function(H){if(H!=null&&H.responseCode=="200"){var G=H.responseData.groups;
+if(G){if(G.productLv2Group){var I="CMCG10000044";
+var M={siteCode:sysConfig.siteCode,productLevel:"lv2",productId:G.productLv2Group,channelCode:"WEBSITE"};
+apiCommon.queryBatchProductsInfo(M,function(N){if(N!=null&&N.responseData!=null&&N.responseData.productList!=null&&N.responseData.productList.length>0){var Q=N.responseData.productList;
+if(!B||!C){if(!G.productLv3Group){for(var P=0;
+P<Q.length;
+P++){if(Q[P].parentId!=I){h(Q[P].productId,Q[P].displayName,F);
+break
+}}}}for(var P=0;
+P<Q.length;
+P++){if(Q[P].parentId!=I){if(B&&C){if(Q[P].productId==B){h(Q[P].productId,Q[P].displayName,F)
+}}var O='<li class="a-support-common dmpa-click-dispach" cat="FAQ detail" act="Click on '+F+'" lab="device type:'+Q[P].displayName+'" data-parentid="'+Q[P].parentId+'" data-productid="'+Q[P].productId+'">'+Q[P].displayName+"</li>";
+$("ul.product-lv2").append(O)
+}}k($(".adaptable-area-spec .product-catalog-tree > ul.product-lv2"))
+}})
+}if(G.productLv3Group){var L={siteCode:sysConfig.siteCode,productLevel:"lv3",productId:G.productLv3Group,channelCode:"WEBSITE"};
+apiCommon.queryBatchProductsInfo(L,function(N){if(N!=null&&N.responseData!=null&&N.responseData.productList!=null&&N.responseData.productList.length>0){var Q=N.responseData.productList;
+if(!B||!C){if(!G.productLv4Group){h(Q[0].productId,Q[0].displayName,F)
+}}for(var P=0;
+P<Q.length;
+P++){if(B&&C){if(Q[P].productId==B){h(Q[P].productId,Q[P].displayName,F)
+}}var O='<li class="a-support-common dmpa-click-dispach" cat="FAQ detail" act="Click on '+F+'" lab="device series:'+Q[P].displayName+'" data-parentid="'+Q[P].parentId+'" data-productid="'+Q[P].productId+'">'+Q[P].displayName+"</li>";
+$("ul.product-lv3").append(O)
+}k($(".adaptable-area-spec .product-catalog-tree > ul.product-lv3"))
+}})
+}if(G.productLv4Group){var K={siteCode:sysConfig.siteCode,productLevel:"lv4",productId:G.productLv4Group,channelCode:"WEBSITE"};
+apiCommon.queryBatchProductsInfo(K,function(N){if(N!=null&&N.responseData!=null&&N.responseData.productList!=null&&N.responseData.productList.length>0){var Q=N.responseData.productList;
+if(!B||!C){if(!G.productLv5Group){h(Q[0].productId,Q[0].displayName,F)
+}}for(var P=0;
+P<Q.length;
+P++){if(B&&C){if(Q[P].productId==B){h(Q[P].productId,Q[P].displayName,F)
+}}var O='<li class="a-support-common dmpa-click-dispach" cat="FAQ detail" act="Click on '+F+'" lab="product name:'+Q[P].displayName+'" data-parentid="'+Q[P].parentId+'" data-productid="'+Q[P].productId+'">'+Q[P].displayName+"</li>";
+$("ul.product-lv4").append(O)
+}k($(".adaptable-area-spec .product-catalog-tree > ul.product-lv4"))
+}})
+}if(G.productLv5Group){var J={siteCode:sysConfig.siteCode,productLevel:"lv5",productId:G.productLv5Group,channelCode:"WEBSITE"};
+apiCommon.queryBatchProductsInfo(J,function(N){if(N!=null&&N.responseData!=null&&N.responseData.productList!=null&&N.responseData.productList.length>0){var Q=N.responseData.productList;
+if(!B||!C){h(Q[0].productId,Q[0].displayName,F)
+}for(var P=0;
+P<Q.length;
+P++){if(B&&C){if(Q[P].productId==B){h(Q[P].productId,Q[P].displayName,F)
+}}var O='<li title="'+Q[P].displayName+'" class="a-support-common dmpa-click-dispach" cat="FAQ detail" act="Click on '+F+'" lab="product type:'+Q[P].displayName+'" data-parentid="'+Q[P].parentId+'" data-productid="'+Q[P].productId+'">'+Q[P].displayName+"</li>";
+$("ul.product-lv5").append(O)
+}k($(".adaptable-area-spec .product-catalog-tree > ul.product-lv5"))
+}})
+}s();
+i()
+}else{$(".adaptable-area-normal").show();
+c();
+w()
+}$(".adaptable-knowledge-list").on("click",".close-icon",function(){if($(".adaptable-knowledge-list").hasClass("active")){$("body").removeClass("scroll-disabled");
+$(".adaptable-knowledge-list").removeClass("active");
+$(".adaptable-knowledge-list").hide();
+$(".iparys_inherited").show();
+$(".supportquestionnairedom-side").show()
+}});
+$(".adaptable-knowledge-list").click(function(O){var O=O||window.event;
+var N=O.target;
+if($(N).is(".adaptable-knowledge-list")){if($(".adaptable-knowledge-list").hasClass("active")){$("body").removeClass("scroll-disabled");
+$(".adaptable-knowledge-list").removeClass("active");
+$(".adaptable-knowledge-list").hide();
+$(".iparys_inherited").show();
+$(".supportquestionnairedom-side").show()
+}}});
+$(".product-catalog-tree-mobile-wrap").on("click",".close-icon",function(){if($(".product-area-text").hasClass("active")){$("body").removeClass("scroll-disabled");
+$(".product-area-text").removeClass("active");
+$(".result-tree ul").html("");
+$(".product-catalog-tree-mobile .select-area ul").hide();
+$(".product-catalog-tree-mobile .select-area ul li").hide();
+$('.product-catalog-tree-mobile .select-area ul[data-index="0"]').show();
+$('.product-catalog-tree-mobile .select-area ul[data-index="0"] li').show();
+$(".product-catalog-tree-mobile").hide();
+$(".iparys_inherited").show();
+$(".supportquestionnairedom-side").show()
+}});
+$(".product-catalog-tree-mobile").click(function(O){var O=O||window.event;
+var N=O.target;
+if($(N).is(".product-catalog-tree-mobile-container")){if($(".product-area-text").hasClass("active")){$("body").removeClass("scroll-disabled");
+$(".product-area-text").removeClass("active");
+$(".result-tree ul").html("");
+$(".product-catalog-tree-mobile .select-area ul").hide();
+$(".product-catalog-tree-mobile .select-area ul li").hide();
+$('.product-catalog-tree-mobile .select-area ul[data-index="0"]').show();
+$('.product-catalog-tree-mobile .select-area ul[data-index="0"] li').show();
+$(".product-catalog-tree-mobile").hide();
+$(".iparys_inherited").show();
+$(".supportquestionnairedom-side").show()
+}}});
+$(document).click(function(R){var O=$(".product-area");
+var Q=$(".product-catalog-tree-mobile");
+var N=$(".emui-area");
+var P=$(".adaptable-knowledge-list");
+if(!O.is(R.target)&&O.has(R.target).length===0&&!q){if($(".product-area-text").hasClass("active")){$(".product-area-text").removeClass("active");
+e()
+}}if(!N.is(R.target)&&N.has(R.target).length===0){if($(".emui-area-text").hasClass("active")){$(".emui-area-text").removeClass("active");
+$(".emui-catalog").hide()
+}}if(!O.is(R.target)&&O.has(R.target).length===0&&!Q.is(R.target)&&Q.has(R.target).length===0&&q){if($(".product-area-text").hasClass("active")){$(".product-area-text").removeClass("active");
+x()
+}}})
+}else{$(".adaptable-area-normal").show();
+c();
+w()
+}})
+}function h(A,B,z){$(".product-area-text").attr("data-productid",A);
+$(".product-area-text span").text(B);
+$(".adaptable-area-spec").show();
+m(A,z,false);
+l()
+}function l(){var B=$(".product-area-text-desc").outerWidth();
+var A=$(".emui-area-text-desc").outerWidth();
+var z=$(".emui-area-text").outerWidth();
+$(".product-catalog-tree").css("left",B+"px");
+if(!q){$(".emui-catalog").css("left",A+"px")
+}$(".emui-catalog").css("width",z+"px");
+$(".product-area-text").on("click",function(){var C=$(this);
+if(q){$(".iparys_inherited").hide();
+$(".supportquestionnairedom-side").hide();
+if(C.hasClass("active")){C.removeClass("active");
+x()
+}else{C.addClass("active");
+$("body").addClass("scroll-disabled");
+$(".product-catalog-tree-mobile").show()
+}}else{if(C.hasClass("active")){C.removeClass("active");
+e()
+}else{C.addClass("active");
+$(".product-catalog-tree").css("display","flex")
+}}});
+$(".emui-area-text").on("click",function(){var C=$(this);
+if(!C.hasClass("disabled")){if(C.hasClass("active")){C.removeClass("active");
+$(".emui-catalog").hide()
+}else{C.addClass("active");
+$(".emui-catalog").show()
+}}})
+}function s(){$(".product-catalog-tree").on("click","ul li",function(){var F=$(this);
+var E=F.parent();
+var z=E.attr("data-index");
+if(z){z=parseInt(z)
+}var C=$("#knowledgeTitle").text()||"";
+C=C.trim();
+var B=F.attr("data-productid");
+var D=F.text();
+var A=$(".emui-area-text span").text();
+if(z<3){z=z+1;
+v(z);
+if(u(z,B)){E.find("li").not(F).removeClass("active");
+F.addClass("active");
+$('.product-catalog-tree ul[data-index="'+z+'"] li[data-parentid="'+B+'"').show();
+$('.product-catalog-tree ul[data-index="'+z+'"]').show()
+}else{$(".product-area-text").attr("data-productid",B);
+$(".product-area-text span").text(D);
+m(B,C,true)
+}}else{$(".product-area-text").attr("data-productid",B);
+$(".product-area-text span").text(D);
+m(B,C,true)
+}});
+$(".product-catalog-tree-mobile").on("click",".select-area ul li",function(){var G=$(this);
+var F=G.parent();
+var z=F.attr("data-index");
+if(z){z=parseInt(z)
+}var D=$("#knowledgeTitle").text()||"";
+D=D.trim();
+var C=G.attr("data-productid");
+var E=G.text();
+var B=$(".emui-area-text").attr("data-emuiid");
+var A=$(".emui-area-text span").text();
+if(z<3){z=z+1;
+if(u(z,C)){$(".result-tree ul").append("<li><span></span>"+E+"</li>");
+$('.product-catalog-tree-mobile .select-area ul[data-index="'+z+'"] li[data-parentid="'+C+'"').show();
+$(".product-catalog-tree-mobile .select-area ul").hide();
+$('.product-catalog-tree-mobile .select-area ul[data-index="'+z+'"]').show()
+}else{$(".product-area-text").attr("data-productid",C);
+$(".product-area-text span").text(E);
+m(C,D,true)
+}}else{$(".product-area-text").attr("data-productid",C);
+$(".product-area-text span").text(E);
+m(C,D,true)
+}})
+}function k(z){z.each(function(){var B=$(this).find("li").length;
+var A=48*B;
+if(A>f){f=A
+}f=f>267?267:f;
+if(A<267){$(this).css("overflow-y","hidden")
+}$(".adaptable-area-spec .product-catalog-tree").css("height",f+"px");
+$(".adaptable-area-spec .product-catalog-tree > ul").css("height",f+"px")
+})
+}function m(E,D,C){$(".emui-catalog ul").empty();
+if(C){history.pushState("","",location.pathname)
+}var z=d("productId");
+var A=d("emuiId");
+var B={knowledgeTitle:D,languageCode:getSiteLanguage(),curPage:"1",pageSize:"50",channel:"10004",productCode:E};
+apiKnowledgeBase.queryExtendedAttrList(B,function(G){if(G!=null&&G.responseCode=="200"&&G.responseData.groups&&G.responseData.groups.emuiCodeGroup){var F=G.responseData.groups;
+var L=F.emuiCodeGroup.split(",");
+var M;
+var H=false;
+for(var K=0;
+K<L.length;
+K++){var J=L[K];
+if(z&&A&&A==L[K]){$(".emui-area-text span").text(J);
+$(".emui-area-text").removeClass("disabled");
+$(".emui-area-text").attr("data-emuiid",L[K]);
+M=A;
+H=true
+}var I='<li class="a-support-common dmpa-click-dispach" cat="FAQ detail" act="Click on '+D+'" lab="system version:'+J+'" data-emuiid="'+L[K]+'">'+J+"</li>";
+$(".emui-catalog ul").append(I)
+}if(!H){$(".emui-area-text span").text(L[0]);
+$(".emui-area-text").removeClass("disabled");
+$(".emui-area-text").attr("data-emuiid",L[0]);
+M=L[0]
+}C&&$('.emui-catalog li[data-emuiid="'+M+'"]').trigger("click")
+}else{$(".emui-area-text span").text("NA");
+$(".emui-area-text").addClass("disabled")
+}});
+if(q){if($(".product-area-text").hasClass("active")){$(".product-area-text").removeClass("active");
+x()
+}}else{if($(".product-area-text").hasClass("active")){$(".product-area-text").removeClass("active");
+e()
+}}}function i(){$(".emui-catalog").on("click","li[data-emuiid]",function(){var E=$(this);
+var C=E.attr("data-emuiid");
+var z=E.text();
+if($(".emui-area-text").hasClass("active")){$(".emui-area-text").removeClass("active");
+$(".emui-catalog").hide()
+}var B=$("#knowledgeTitle").text()||"";
+B=B.trim();
+var A=$(".product-area-text").attr("data-productid");
+var D=$(".product-area-text span").text();
+y(B,A,D,C,z)
+})
+}function y(D,C,E,B,A){var z={knowledgeTitle:D,productCodes:C,emuiCode:B,channel:"10004",languageCode:getSiteLanguage()};
+apiKnowledgeBase.querySimilarKnowledge(z,function(P){if(P!=null&&P.responseCode=="200"&&P.responseData.rList!=null&&P.responseData.rList.length>0){var F=P.responseData.rList;
+$(".product-area-text").attr("data-productid",C);
+$(".product-area-text span").text(E);
+$(".emui-area-text").attr("data-emuiid",B);
+$(".emui-area-text span").text(A);
+if(F.length===1){var G=F[0].knowledgeId;
+var H=location.pathname;
+var N=location.origin;
+var H=N+p(H,G)+"?productId="+C+"&emuiId="+B;
+window.location.href=H
+}else{var I=$(".adaptable-area-spec .product-area-text-desc").text();
+var L=$(".adaptable-area-spec .emui-area-text-desc").text();
+var O=$(".product-area-text span").text();
+var M=$(".emui-area-text span").text();
+$(".adaptable-knowledge-list ul").html("");
+for(var J=0;
+J<F.length;
+J++){var G=F[J].knowledgeId;
+var H=location.pathname;
+var N=location.origin;
+var H=N+p(H,G)+"?productId="+C+"&emuiId="+B;
+var K='<li class="adaptable-knowledge-list-li"><div class="adaptable-knowledge-title"><span><a href="'+H+'">'+P.responseData.knowledgeTitle+'</a></span></div><div class="adaptable-knowledge-desc"><div class="adaptable-knowledge-product">'+I+"<span>"+O+'</span></div><div class="adaptable-knowledge-emui">'+L+"<span>"+M+"</span></div></div></li>";
+$(".adaptable-knowledge-list ul").append(K)
+}$("body").addClass("scroll-disabled");
+$(".adaptable-knowledge-list").addClass("active");
+$(".adaptable-knowledge-list").show()
+}}else{$(".error-tips").show().delay(3000).hide(300)
+}if(q){if($(".product-area-text").hasClass("active")){$(".product-area-text").removeClass("active");
+x()
+}}else{if($(".product-area-text").hasClass("active")){$(".product-area-text").removeClass("active");
+e()
+}}})
+}function p(B,A){if(!B){return""
+}var z=B.length;
+var C=B.lastIndexOf("/");
+if(C==(z-1)){B=B.substr(0,C)
+}C=B.lastIndexOf("/");
+B=B.substr(0,C)+"/"+A+"/";
+return B
+}function v(z){for(var A=z;
+A<=3;
+A++){$('.product-catalog-tree ul[data-index="'+A+'"]').hide();
+$('.product-catalog-tree ul[data-index="'+A+'"] li').hide();
+$('.product-catalog-tree ul[data-index="'+A+'"] li').removeClass("active")
+}}function e(){$(".product-catalog-tree").hide();
+$(".product-catalog-tree ul").hide();
+$(".product-catalog-tree ul li").hide();
+$(".product-catalog-tree ul:eq(0)").show();
+$(".product-catalog-tree ul:eq(0) li").show()
+}function x(){$(".product-catalog-tree-mobile").hide();
+$(".result-tree ul").html("");
+$(".product-catalog-tree-mobile .select-area ul").hide();
+$(".product-catalog-tree-mobile .select-area ul li").hide();
+$(".product-catalog-tree-mobile .select-area ul:eq(0)").show();
+$(".product-catalog-tree-mobile .select-area ul:eq(0) li").show()
+}function u(z,A){return $('ul[data-index="'+z+'"] li[data-parentid="'+A+'"').length===0?false:true
+}function d(z){var A=new RegExp("(^|&)"+z+"=([^&]*)(&|$)");
+var B=window.location.search.substr(1).match(A);
+if(B!=null){return decodeURIComponent(B[2])
+}return null
+}});
