@@ -1,0 +1,93 @@
+/**
+自定义样式库
+**/
+.video-js{
+  display: inline-block !important;
+}
+.device-localstorage-link.mr-2{
+  float: right;
+  margin-right: 150px;
+}
+#mark .markdown-body table.tableClass2_t tr:nth-child(1) th{
+	font-weight: bold !important;
+}
+
+@media (max-width: 767px){
+  .device-localstorage-link.mr-2{
+    float: left;
+    margin-right: 0;
+  }
+    
+}
+@media (min-width: 767px){
+  .support-banner{
+    min-height:7.2rem !important;
+  }
+  html[lang="ru"] .support-banner .ru_intro,
+  html[lang="en"] .support-banner .ru_intro,
+  html[lang="de"] .support-banner .ru_intro,
+  html[lang="es"] .support-banner .ru_intro,
+  html[lang="fr"] .support-banner .ru_intro,
+  html[lang="pt"] .support-banner .ru_intro,
+  html[lang="jp"] .support-banner .ru_intro,
+  html[lang="kr"] .support-banner .ru_intro {
+      top: 45% !important;
+      left: 4rem !important;
+      width: 12.8rem !important;
+  }
+  html[lang="ru"] .intro .btn_common,
+  html[lang="en"] .intro .btn_common,
+  html[lang="de"] .intro .btn_common,
+  html[lang="es"] .intro .btn_common,
+  html[lang="fr"] .intro .btn_common,
+  html[lang="pt"] .intro .btn_common,
+  html[lang="jp"] .intro .btn_common,
+  html[lang="kr"] .intro .btn_common{
+    margin-top:0.2rem !important;
+  }
+  html[lang="cn"] .intro .btn_common{
+    margin-top:0.2rem !important;
+    min-width: 2.8rem !important;
+    line-height:0.72rem !important;
+  }
+  html[lang="cn"] .intro .KV_title{
+    margin-bottom:0.2rem !important;
+    font-size:0.72rem !important;
+  }
+  html[lang="cn"] .intro .KV_text{
+    font-size:0.32rem !important;
+  }
+}
+app-nav-list .link-a{
+  padding-right: 0.9rem !important;
+}
+.cdk-overlay-container{
+  z-index: 9999 !important;
+}
+
+.cdk-global-scrollblock .cdk-overlay-container {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+html[lang="ru"] app-more-resources .dec,
+html[lang="en"] app-more-resources .dec{
+	line-height: 0.48rem !important;
+}
+.card_Des_more a:hover,
+.resource_service_item a:hover
+{
+	text-decoration: underline;
+}
+/* table.simpletableborder td,table.layoutFixed td{
+	vertical-align: middle;
+} */
+app-nav-list .h1{
+  line-height:28px;
+}
+#mark .markdown-body table.layoutFixed.idpTab{
+	table-layout: fixed !important;
+}
+ul.vjs-menu-content{
+padding-left:0 !important;
+overflow-y: hidden !important;
+}

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[16],{nS24:function(n,o,e){"use strict";e.r(o),o.default='<svg width="24" height="6" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path opacity=".1" d="M0-1h24v8H0z"/><path stroke="#DD697C" stroke-linecap="round" stroke-linejoin="round" d="M20 0l3 3-3 3M1 3h22"/></g></svg>'}}]);
